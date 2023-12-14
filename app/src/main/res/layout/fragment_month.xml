@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthFragment"
+    android:background="@drawable/mainbg">
+
+    <Button
+        android:id="@+id/btnGoDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/calendarView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="-177dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:shadowColor="@color/darkgreen"
+        android:text="Go to the date." />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btnGotoDay"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="-3dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:shadowColor="@color/darkgreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget your Month"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/calendarView"/>
+
+    <TextView
+        android:id="@+id/txtBudget"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="Budget: ₱ "
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txtBudgetNum"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Budget Number"
+        android:textColor="#F80202"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txtSpentNum"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBudgetNum"
+        android:layout_alignParentRight="true"
+        android:text="Spent Number"
+        android:textColor="#F80202"
+        android:textSize="26dp" />
+    <TextView
+        android:id="@+id/txtSpent"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBudget"
+        android:layout_alignParentLeft="true"
+        android:text="Spent: ₱ "
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txtRemain"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSpent"
+        android:layout_alignParentLeft="true"
+        android:text="Remaning: ₱ "
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txtRemainNum"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSpentNum"
+        android:layout_alignParentRight="true"
+        android:text="Remaning Number"
+        android:textColor="#F80202"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Date"
+        android:textColor="@color/darkgreen"
+        android:textSize="26dp" />
+</RelativeLayout>

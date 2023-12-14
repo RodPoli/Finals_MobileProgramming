@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="45sp"
+    android:gravity="center_vertical"
+    android:background="#e3f5f1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/details"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:id="@+id/expPrice"
+        android:text="99999"
+        android:maxLines="2"
+        android:padding="5sp"
+        android:fontFamily="@font/ubuntufont"
+        android:textColor="#452060"
+        android:textSize="26sp"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:text="name"
+        android:scrollbars = "vertical"
+        android:maxLines="2"
+        android:padding="5sp"
+        android:fontFamily="@font/ubuntufont"
+        android:textColor="#9f3c91"
+        android:textSize="26sp"
+        android:id="@+id/expName"
+        android:contentDescription="@string/app_name" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnExpCancel"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:textColor="#86e0ce"
+        android:foregroundGravity="center_vertical"
+        android:background="@drawable/delete_item_icon"
+        android:layout_margin="10sp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

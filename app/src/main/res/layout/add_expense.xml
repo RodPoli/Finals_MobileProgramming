@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e3f5f1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:text="Add Expense"
+        android:padding="5sp"
+        android:fontFamily="@font/ubuntufont"
+        android:textColor="#B7D974"
+        android:textSize="26sp"
+        android:background="#286080"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3f5f1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Name"
+            android:fontFamily="@font/ubuntufont"
+            android:textSize="18sp"
+            android:textColor="#446374"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/expenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:maxLength="32"
+            android:hint="ex. Donuts"
+            android:inputType="text"
+            android:textColorHint="#81afb5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="@font/ubuntufont"
+            android:textSize="18sp"
+            android:textColor="#446374"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/expensePrice"
+            android:inputType="numberSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:hint="ex. 30"
+            android:maxLength="5"
+            android:textColorHint="#81afb5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3f5f1">
+    <Button
+        android:id="@+id/btnExpCancel"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:textColor="#86e0ce"
+        android:background="#5da75d"
+        android:layout_margin="3sp"
+        app:backgroundTint="@null"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/btnExpAdd"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:textColor="#eee98a"
+        android:layout_margin="3sp"
+        android:background="#5da75d"
+        app:backgroundTint="@null"
+        android:text="Add Expense" />
+
+    </LinearLayout>
+</LinearLayout>

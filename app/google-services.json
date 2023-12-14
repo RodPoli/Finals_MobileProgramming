@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "257791375049",
+    "project_id": "machineproblemfour",
+    "storage_bucket": "machineproblemfour.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257791375049:android:da5139fa3427f554523f18",
+        "android_client_info": {
+          "package_name": "com.example.machineproblemfour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ-In8cs7jqYPsoEd__pngOus-ZsZfp8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
